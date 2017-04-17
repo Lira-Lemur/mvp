@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lira.mvp.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonPanel">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Here will be the list of films.\n Just click buttons below!" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnHorrors"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_show_horrors" />
+
+        <Button
+            android:id="@+id/btnComedies"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn_show_comedies" />
+    </LinearLayout>
+
+
+</RelativeLayout>

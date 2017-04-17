@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CinemaApp</string>
+    <string name="btn_show_horrors">Show Horrors</string>
+    <string name="btn_show_comedies">Show comedies</string>
+</resources>

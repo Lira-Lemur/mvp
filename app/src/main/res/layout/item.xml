@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="5dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SFDFDFDG"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/directorField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieTitle"
+        android:text="Director: " />
+
+    <TextView
+        android:id="@+id/movieDirector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieTitle"
+        android:layout_toEndOf="@+id/directorField"
+        android:text="Rjfhg Fgjf" />
+
+    <TextView
+        android:id="@+id/yearField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/directorField"
+        android:text="Year: " />
+
+    <TextView
+        android:id="@+id/movieYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/directorField"
+        android:layout_toEndOf="@+id/yearField"
+        android:text="2015" />
+
+</RelativeLayout>
