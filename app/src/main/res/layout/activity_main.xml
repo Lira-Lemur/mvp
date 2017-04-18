@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lira.mvp.MainActivity">
+    tools:context="com.example.eparpalac.mvpapp.MainActivity">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -25,7 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
 
         <Button
             android:id="@+id/btnHorrors"

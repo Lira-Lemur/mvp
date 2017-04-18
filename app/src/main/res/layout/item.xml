@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/movieTitle"
         android:layout_toEndOf="@+id/directorField"
-        android:text="Rjfhg Fgjf" />
+        android:text="Rjfhg Fgjf"
+        android:layout_toRightOf="@+id/directorField" />
 
     <TextView
         android:id="@+id/yearField"
@@ -44,6 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/directorField"
         android:layout_toEndOf="@+id/yearField"
-        android:text="2015" />
+        android:text="2015"
+        android:layout_toRightOf="@+id/yearField" />
 
 </RelativeLayout>
