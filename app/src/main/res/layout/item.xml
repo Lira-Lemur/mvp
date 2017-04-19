@@ -13,7 +13,6 @@
         android:id="@+id/movieTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SFDFDFDG"
         android:textAlignment="center" />
 
     <TextView
@@ -29,7 +28,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/movieTitle"
         android:layout_toEndOf="@+id/directorField"
-        android:text="Rjfhg Fgjf"
         android:layout_toRightOf="@+id/directorField" />
 
     <TextView
@@ -45,7 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/directorField"
         android:layout_toEndOf="@+id/yearField"
-        android:text="2015"
         android:layout_toRightOf="@+id/yearField" />
 
 </RelativeLayout>

@@ -1,12 +1,14 @@
 package com.example.eparpalac.mvpapp.model;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.eparpalac.mvpapp.R;
+import com.example.eparpalac.mvpapp.model.movie.Movie;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +18,7 @@ import butterknife.ButterKnife;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
 
-    private List<? extends Movie> movieList;
+    private List<Movie> movieList;
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
@@ -25,7 +27,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         @BindView(R.id.movieDirector)
         TextView movieDirector;
         @BindView(R.id.movieYear)
-        TextView tempDay;
+        TextView movieYear;
 
         ViewHolder(View v) {
             super(v);
@@ -48,9 +50,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         Movie movie = movieList.get(position);
 
-        holder.movieTitle.setText(movie.getYear());
-        holder.movieDirector.setText(movie.getYear());
-        holder.tempDay.setText(movie.getYear());
+        Log.w("ITEM", movie.getName());
+
+        holder.movieTitle.setText(movie.getName());
+        holder.movieDirector.setText(movie.getDirectedBy());
+        holder.movieYear.setText(movie.getYear());
 
     }
 
@@ -59,8 +63,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         return movieList.size();
     }
 
-    public void reset(List<? extends Movie> movies) {
-
+    public void updateList(List<Movie> movies) {
+        this.movieList = movies;
+        notifyDataSetChanged();
     }
 
 }

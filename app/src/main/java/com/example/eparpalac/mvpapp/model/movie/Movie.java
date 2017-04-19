@@ -1,12 +1,9 @@
+package com.example.eparpalac.mvpapp.model.movie;
 
-package com.example.eparpalac.mvpapp.model.horror;
-
-import com.example.eparpalac.mvpapp.model.Movie;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Horror implements Movie {
-
+public class Movie {
     @SerializedName("directed_by")
     @Expose
     private String directedBy;
@@ -40,5 +37,4 @@ public class Horror implements Movie {
     public void setYear(Integer year) {
         this.year = year;
     }
-
 }

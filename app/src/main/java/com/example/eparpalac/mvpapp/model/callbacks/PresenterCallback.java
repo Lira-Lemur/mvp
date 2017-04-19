@@ -1,8 +1,6 @@
 package com.example.eparpalac.mvpapp.model.callbacks;
 
-
-
-import com.example.eparpalac.mvpapp.model.Movie;
+import com.example.eparpalac.mvpapp.model.movie.Movie;
 
 import java.util.List;
 
@@ -16,7 +14,7 @@ public class PresenterCallback implements CallbackInterface {
     }
 
     @Override
-    public void call(List<? extends Movie> movies) {
+    public void call(List<Movie> movies) {
         fragmentCallback.call(movies);
     }
 }
